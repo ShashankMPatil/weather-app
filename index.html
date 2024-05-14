@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center title">Weather</h1>
+
+        <form class="search-location">
+            <input type="text" name="city" placeholder="What city?"
+            autocomplete="off" class="form-control text-muted form-rounded p-4 shadow-sm">
+        </form>
+
+        <div class="card rounded my-3 shadow-lg back-card d-none">
+            <div class="card-top text-center">
+                <div class="city-name my-3">
+                    <p>Delhi</p>
+                    <span>...</span>
+                </div>
+                <img src="./img/night_image.svg" class="card-img-top time" alt="">
+            </div>
+            <div class="card-body">
+                <div class="card-mid row">
+                    <div class="col-8 text-center temp">
+                        <span>30&deg;C</span>
+                    </div>
+                    <div class="col-4 condition-temp">
+                        <p class="condition">Thunder storm</p>
+                        <p class="high">30&deg;C</p>
+                        <p class="low">27&deg;C</p>
+                    </div>
+                </div>
+
+                <div class="icon-container card shadow mx-auto">
+                    <img src="./img/cloud.svg" alt="">
+                </div>
+                <div class="card-bottom px-5 py-4 row">
+                    <div class="col text-center">
+                        <p>30&deg;C</p>
+                        <p>Feels Like</p>
+                    </div>
+                    <div class="col text-center">
+                        <p>55%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+
+ 
+ <script src="request.js"></script>
+ <script src="index.js"></script>
+</body>
+</html>
